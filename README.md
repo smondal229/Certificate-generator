@@ -1,3 +1,4 @@
+This is a certificate image generation tool made with react and typescript using canvas
 ## Available Scripts
 
 In the project directory, you can run:
