@@ -31,6 +31,7 @@ import FileUpload from './FileUpload';
 import Konva from 'konva';
 import useImage from 'use-image';
 import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons';
+import { ColorModeSwitcher } from '../ColorModeSwitcher/ColorModeSwitcher';
 
 
 export default function CertificatesSubPage() {
@@ -368,6 +369,7 @@ export default function CertificatesSubPage() {
     }
     return (
       <>
+      <ColorModeSwitcher />
       {isOpen ? <Box m={5} display="flex" alignItems="center">
         <FileUpload handleForce={handleForce} onChange={onChange} imgData={certImg} csvData={csvData} csvInfo={csvFileInfo} onSubmit={onSubmitFiles} />
       </Box> :
